@@ -7,12 +7,12 @@ print("--AES in ECB mode--")
 AES_ECB=AES.AESinECB()
 
 # Open test file
-with open('test_files/500MB.txt', 'r') as file:
+with open('/home/anon/Uni/CyberSec/Project/test_files/500MB.txt', 'r') as file:
             msg = file.read()
 
 # Print input message (will not be used for testing large files) and key
 #print("Plaintext: '"+msg+"'")
-print("Key: '"+AES.key.hex()+"'")
+print("Key: '"+AES_ECB.getKey().hex()+"'")
 
 # Start encryption           
 start_time1 = time.time()
