@@ -7,12 +7,12 @@ print("--3DES in ECB mode--")
 TripleDES_ECB=TripleDES.TripleDESinECB()
 
 # Open test file
-with open('test_files/100MB.txt', 'r') as file:
+with open('file/path/goes/here', 'r') as file:
             msg = file.read()
 
 # Print input message (will not be used for testing large files) and key
 #print("Plaintext: '"+msg+"'")
-print("Key: '"+TripleDES.key.hex()+"'")
+print("Key: '"+TripleDES_ECB.getKey().hex()+"'")
 
 # Start encryption           
 start_time1 = time.time()
