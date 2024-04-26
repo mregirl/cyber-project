@@ -7,7 +7,7 @@ print("--AES in ECB mode--")
 AES_ECB=AES.AESinECB()
 
 # Open test file
-with open('/home/anon/Uni/CyberSec/Project/test_files/500MB.txt', 'r') as file:
+with open('file/path/goes/here', 'r') as file:
             msg = file.read()
 
 # Print input message (will not be used for testing large files) and key
